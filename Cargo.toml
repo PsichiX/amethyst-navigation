@@ -1,0 +1,27 @@
+[package]
+name = "amethyst-navigation"
+version = "0.1.0"
+authors = ["Patryk 'PsichiX' Budzynski <psichix@gmail.com>"]
+edition = "2018"
+description = "Navigation module for Amethyst Engine"
+license-file = "Apache-2.0/MIT"
+homepage = "https://github.com/PsichiX/amethyst-navigation"
+repository = "https://github.com/PsichiX/amethyst-navigation"
+documentation = "https://docs.rs/amethyst-navigation"
+readme = "README.md"
+
+[features]
+parallel = ["oxygengine-navigation/parallel"]
+
+[dependencies]
+amethyst_core = "0.7"
+oxygengine-navigation = "0.4"
+
+[dev-dependencies.amethyst]
+version = "0.12"
+features = [
+  "vulkan"
+]
+
+[dev-dependencies]
+winit = "0.19.2"
